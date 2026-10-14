@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "start": "node src/cli.mjs",
-    "test": "node --test \"test/*.test.mjs\""
+    "test": "node --test test/tv.test.mjs test/mcp.test.mjs"
   },
   "keywords": [
     "mcp",
