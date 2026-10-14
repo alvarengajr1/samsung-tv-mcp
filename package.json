@@ -1,0 +1,39 @@
+{
+  "name": "samsung-tv-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that lets AI agents control a Samsung Tizen smart TV on the local network",
+  "type": "module",
+  "bin": {
+    "samsung-tv-mcp": "src/cli.mjs"
+  },
+  "exports": {
+    ".": "./src/tv.mjs",
+    "./mcp": "./src/mcp.mjs"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "node src/cli.mjs",
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "samsung",
+    "tizen",
+    "smart-tv",
+    "ai-agent",
+    "claude"
+  ],
+  "author": "Marcelo Alvarenga Junior",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "ws": "^8.18.0",
+    "zod": "^4.0.0"
+  }
+}
